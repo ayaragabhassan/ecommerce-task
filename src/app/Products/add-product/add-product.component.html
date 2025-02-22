@@ -1,0 +1,31 @@
+<h2 class="text-center mb-4"> Add New Product</h2>
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card p-4 shadow">
+      <form>
+        <div class="mb-3">
+          <label for="Name" class="form-label">Product Name</label>
+          <input type="text" class="form-control" id="Name" name="Name" [(ngModel)]="productObject.Name" placeholder="Enter product name">
+        </div>
+        <div class="mb-3">
+          <label for="Price" class="form-label">Price ($)</label>
+          <input type="number" class="form-control" id="Price" name="Price" [(ngModel)]="productObject.Price" placeholder="Enter price">
+        </div>
+        <div class="mb-3">
+          <label for="Description" class="form-label">Description</label>
+          <textarea class="form-control" id="Description" name="Description" rows="3" [(ngModel)]="productObject.Description"
+            placeholder="Enter product description"></textarea>
+        </div>
+        <!-- <div class="mb-3">
+          <label for="Image" class="form-label">Product Image</label>
+          <input type="file" class="form-control"  id="Image" accept="image/*">
+        </div>
+        <div class="mb-3 text-center">
+          <img id="imagePreview" class="img-thumbnail" style="display:none; max-width: 200px;">
+        </div> -->
+        <button type="submit" class="btn btn-primary w-100" (click)="addProduct()">Add Product</button>
+
+      </form>
+    </div>
+  </div>
+</div>
