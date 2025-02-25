@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { products } from './data/ds';
 import { Product } from './Interface/Product';
 
@@ -7,6 +7,8 @@ import { Product } from './Interface/Product';
   templateUrl: './app.component.html',
   standalone: false,
   styleUrl: './app.component.scss',
+  encapsulation:ViewEncapsulation.None
+
 })
 export class AppComponent {
   title = 'ecommerce-task';

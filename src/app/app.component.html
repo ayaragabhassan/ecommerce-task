@@ -7,12 +7,13 @@
 </head>
 
 <div class="container mt-5">
-  <div class="row">
-
+  <!-- <div class="row">
     <app-add-product (AddNewProduct)="addProduct($event)">
     </app-add-product>
+  </div> -->
+  <div>
+    <button class="button">Buy Now</button>
   </div>
-
   <br>
   <div class="row">
     <app-products class="col-md-4 mb-4" *ngFor="let pro of productsList" [Product]="pro">
