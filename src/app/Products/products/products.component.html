@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" appProductDirective  [defaultColor] = "'blue'" [leaveColor]="'black'">
   <img [src]="Product.Image" class="card-img-top" [alt]="Product.Name" />
   <div class="card-body">
     <h5 class="card-title">{{ Product.Name }}</h5>
@@ -6,4 +6,7 @@
     <p class="card-text">{{Product.Description}}</p>
     <a href="#" class="btn btn-primary">Buy Now</a>
   </div>
+
+  <button class="button">Buy Now</button>
+
 </div>
